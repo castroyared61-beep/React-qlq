@@ -1,0 +1,24 @@
+@ApiEjemplo_HostAddress = http://localhost:5156
+
+GET {{ApiEjemplo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### Obtener todas las categorías
+GET {{ApiEjemplo_HostAddress}}/categoria
+Accept: application/json
+
+### Crear un nuevo cliente (POST)
+POST {{ApiEjemplo_HostAddress}}/cliente
+Content-Type: application/json
+
+{
+  "nombre": "Juan Perez",
+  "correo": "juan@ejemplo.com",
+  "ciudad": "Bogotá"
+}
+
+### Obtener clientes para verificar la creación
+GET {{ApiEjemplo_HostAddress}}/cliente
+Accept: application/json

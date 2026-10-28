@@ -1,0 +1,67 @@
+
+
+@Host = http://localhost:5000
+
+### categoria
+
+### 1.  (GET)
+GET {{Host}}/categoria
+Accept: application/json
+
+### 2.  GET
+GET {{Host}}/categoria/1
+Accept: application/json
+
+### 3.POST
+POST {{Host}}/categoria
+Content-Type: application/json
+
+{
+  "nombre": "Electrónica"
+}
+
+### 4. actualizar categoria
+
+PUT {{Host}}/categoria/1
+Content-Type: application/json
+
+{
+  "nombre": "Electrodomésticos"
+}
+
+### 5. delete borrar
+DELETE {{Host}}/categoria/1
+
+Clientes
+
+### 1.  GET
+GET {{Host}}/cliente
+Accept: application/json
+
+### 2. GET ID
+GET {{Host}}/cliente/1
+Accept: application/json
+
+### 3.  POST
+POST {{Host}}/cliente
+Content-Type: application/json
+
+{
+  "nombre": "Yared Acosta",
+  "correo": "castroyared62@gmail",
+  "ciudad": "Ibagué"
+}
+
+### 4. Put actualizar
+PUT {{Host}}/cliente/1
+Content-Type: application/json
+
+{
+  "nombre": "Yared Acosta Castro",
+  "correo": "yared.nuevo@ejemplo.com",
+  "ciudad": "Bogotá"
+}
+
+### 5. Delete borrar
+DELETE {{Host}}/cliente/1
+
